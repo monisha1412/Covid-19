@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vfr-su-gvY">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home PageVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageVC" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-tg-jov">
+                                <rect key="frame" x="20" y="378" width="374" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get some information about COVID-19. INDIA." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-3n-4TK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-Yl-Lik">
+                                        <rect key="frame" x="0.0" y="85" width="374" height="55"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iew-Id-x6e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="2lm-SD-fuE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8eU-tg-jov" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Pp-PT-RrY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eU-tg-jov" secondAttribute="trailing" constant="20" id="pz5-sI-Q26"/>
+                            <constraint firstItem="8eU-tg-jov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qYy-Ya-b13"/>
+                            <constraint firstItem="8eU-tg-jov" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIF-KF-aT3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s7c-Ou-eav"/>
+                    <connections>
+                        <segue destination="uyJ-QC-Xh4" kind="show" identifier="HomePageToMainPage" id="ZTj-e3-XDH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="761"/>
+        </scene>
+        <!--TrackerVC-->
+        <scene sceneID="Px9-mv-fH5">
+            <objects>
+                <viewController id="uyJ-QC-Xh4" customClass="TrackerVC" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6rO-bn-ovp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wjp-RI-n7z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDIA COVID-19 TRACKER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xog-T1-0hb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrackerTVCell" rowHeight="183" id="5rn-fX-2g6" customClass="TrackerTVCell" customModule="Covid_19" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="183"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5rn-fX-2g6" id="cC5-OJ-Kmi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="183"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJX-RB-IjJ">
+                                                    <rect key="frame" x="10" y="5" width="394" height="173"/>
+                                                    <color key="backgroundColor" red="0.84522539377212524" green="0.93451577425003052" blue="0.68908017873764038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tJX-RB-IjJ" firstAttribute="top" secondItem="cC5-OJ-Kmi" secondAttribute="top" constant="5" id="KP1-yp-CtX"/>
+                                                <constraint firstAttribute="trailing" secondItem="tJX-RB-IjJ" secondAttribute="trailing" constant="10" id="fSu-iW-gsu"/>
+                                                <constraint firstItem="tJX-RB-IjJ" firstAttribute="leading" secondItem="cC5-OJ-Kmi" secondAttribute="leading" constant="10" id="uu6-b4-9ie"/>
+                                                <constraint firstAttribute="bottom" secondItem="tJX-RB-IjJ" secondAttribute="bottom" constant="5" id="zJG-fe-FkA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="completeView" destination="tJX-RB-IjJ" id="QPM-Td-VPB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uyJ-QC-Xh4" id="isU-FQ-Fgu"/>
+                                    <outlet property="delegate" destination="uyJ-QC-Xh4" id="5Dt-Pz-4gy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wjp-RI-n7z" firstAttribute="trailing" secondItem="A1q-kl-V7H" secondAttribute="trailing" id="7VD-vP-WLE"/>
+                            <constraint firstItem="wjp-RI-n7z" firstAttribute="leading" secondItem="A1q-kl-V7H" secondAttribute="leading" id="Ek2-VD-qgX"/>
+                            <constraint firstAttribute="bottom" secondItem="wjp-RI-n7z" secondAttribute="bottom" id="WG4-mY-yq7"/>
+                            <constraint firstItem="wjp-RI-n7z" firstAttribute="top" secondItem="A1q-kl-V7H" secondAttribute="top" id="zFq-5B-241"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A1q-kl-V7H"/>
+                    </view>
+                    <connections>
+                        <outlet property="trackerTableView" destination="wjp-RI-n7z" id="Kiq-hW-gbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvD-S8-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.9710144927537" y="762.72321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G8Z-V3-2wT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vfr-su-gvY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X5R-fQ-VE8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nx1-ct-27e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDx-3c-AZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="760.71428571428567"/>
+        </scene>
+    </scenes>
+</document>
