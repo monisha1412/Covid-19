@@ -11,12 +11,12 @@ import UIKit
 class ContriesVC: UIViewController {
     
     @IBOutlet weak var countryTableView: UITableView!
-    //
+    
     //    var contriesList : [String] = []
     //    var statesList : [String] = []
     
     
-    var countries : CountryStateCities?
+    var countriesList : CountryStateCities?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +34,9 @@ class ContriesVC: UIViewController {
         
         let decoder = JSONDecoder()
         if  let launch = try? decoder.decode(CountryStateCities.self, from: data){
-            countries = launch
+            countriesList = launch
             
         }
-        print("&&&&&&", countries)
-        
         
         //            let json = try? JSONSerialization.jsonObject(with: data),
         //            let stateCountryCities = json as? [String: Any]
@@ -64,19 +62,19 @@ class ContriesVC: UIViewController {
 extension ContriesVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countries?.countries?.count ?? 0
+        return countriesList?.countries?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = countryTableView.dequeueReusableCell(withIdentifier: "CountriesTVCell", for: indexPath) as! CountriesTVCell
-        cell.countriesLbl.text = countries?.countries?[indexPath.row].countryName
+        cell.countriesLbl.text = countriesList?.countries?[indexPath.row].countryName
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let statesVC = utilizeViewController(boardId: "Main", identifier: "StateAndCitiesVC") as! StateAndCitiesVC
-        statesVC.stateList = countries?.countries?[indexPath.row].states ?? []
+        statesVC.stateList = countriesList?.countries?[indexPath.row].states ?? []
         navigationController?.pushViewController(statesVC, animated: true)
         
     }

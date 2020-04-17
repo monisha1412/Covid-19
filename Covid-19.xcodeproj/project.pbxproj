@@ -116,8 +116,8 @@
 		0DD09A7B24442E6F004D0F73 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0DBD96A42449611700A04028 /* State & Cities */,
 				0DD09A7C24442EB9004D0F73 /* HomePageVC.swift */,
+				0DBD96A42449611700A04028 /* State & Cities */,
 				0DBD969D24495F6900A04028 /* Country */,
 				0DD09A7E24442EBC004D0F73 /* Tracker */,
 				0DD09A8A244438AC004D0F73 /* Appdelegate */,

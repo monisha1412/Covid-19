@@ -16,17 +16,41 @@ class StateAndCitiesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
     }
     
 }
 extension StateAndCitiesVC: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return stateList.count
+    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return stateList[section].stateName
+//    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
     
+     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        
+        let headerLabel = UILabel(frame: CGRect(x: 15, y: 10, width:tableView.bounds.size.width, height: tableView.bounds.size.height))
+        headerLabel.font = UIFont(name: "Cochin-Bold", size: 25)
+        headerLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        headerLabel.text = stateList[section].stateName
+        headerLabel.sizeToFit()
+        headerView.addSubview(headerLabel)
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stateList[section].cities?.count ?? 0
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = statesCitiesTV.dequeueReusableCell(withIdentifier: "StateCititesTCCell", for: indexPath) as! StateCititesTCCell
+        cell.stateCitiesLbl.text = stateList[indexPath.section].cities?[indexPath.row]
         return cell
     }
     

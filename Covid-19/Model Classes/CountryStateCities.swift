@@ -12,7 +12,7 @@ import Foundation
 
 struct CountryStateCities : Codable {
     
-    let countries : [Country]?
+    let  countries : [Country]?
     
     enum CodingKeys: String, CodingKey {
         case countries = "Countries"
