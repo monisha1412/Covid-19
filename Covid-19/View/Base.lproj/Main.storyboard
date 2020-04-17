@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-tg-jov">
                                 <rect key="frame" x="20" y="378" width="374" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get some information about COVID-19. INDIA." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-3n-4TK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get some information about COVID-19." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-3n-4TK">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                         <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,8 +30,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-Yl-Lik">
                                         <rect key="frame" x="0.0" y="85" width="374" height="55"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
-                                        <state key="normal" title="Next">
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
+                                        <state key="normal" title="Click here to view countries list">
                                             <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -43,24 +43,170 @@
                                     <constraint firstAttribute="height" constant="140" id="2lm-SD-fuE"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-iH-ZfG">
+                                <rect key="frame" x="341" y="113" width="53" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="Cities">
+                                    <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countriesBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5E-8Z-Fz0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8eU-tg-jov" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Pp-PT-RrY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9s-iH-ZfG" secondAttribute="trailing" constant="20" id="GOp-xN-u4c"/>
+                            <constraint firstItem="i9s-iH-ZfG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="iDm-AS-Noj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eU-tg-jov" secondAttribute="trailing" constant="20" id="pz5-sI-Q26"/>
                             <constraint firstItem="8eU-tg-jov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qYy-Ya-b13"/>
                             <constraint firstItem="8eU-tg-jov" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIF-KF-aT3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="i9s-iH-ZfG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="s7c-Ou-eav"/>
                     <connections>
-                        <segue destination="uyJ-QC-Xh4" kind="show" identifier="HomePageToMainPage" id="ZTj-e3-XDH"/>
+                        <segue destination="uyJ-QC-Xh4" kind="show" identifier="" id="ZTj-e3-XDH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="877" y="761"/>
+        </scene>
+        <!--ContriesVC-->
+        <scene sceneID="Nyf-Uw-A0A">
+            <objects>
+                <viewController storyboardIdentifier="ContriesVC" id="ym1-vv-oEt" customClass="ContriesVC" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxW-OD-lHj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-by-zxP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Country List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GrG-DQ-lks">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountriesTVCell" rowHeight="100" id="b5F-M6-jOt" customClass="CountriesTVCell" customModule="Covid_19" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b5F-M6-jOt" id="B2H-W8-QTG">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjW-xg-Hv0">
+                                                    <rect key="frame" x="20" y="10" width="336" height="79.5"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RjW-xg-Hv0" firstAttribute="top" secondItem="B2H-W8-QTG" secondAttribute="top" constant="10" id="GJ2-25-A5G"/>
+                                                <constraint firstAttribute="bottom" secondItem="RjW-xg-Hv0" secondAttribute="bottom" constant="10" id="NGs-Sj-iV4"/>
+                                                <constraint firstAttribute="trailing" secondItem="RjW-xg-Hv0" secondAttribute="trailing" constant="20" id="aed-3c-W9P"/>
+                                                <constraint firstItem="RjW-xg-Hv0" firstAttribute="leading" secondItem="B2H-W8-QTG" secondAttribute="leading" constant="20" id="qXF-22-saD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countriesLbl" destination="RjW-xg-Hv0" id="MzM-4l-6WE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ym1-vv-oEt" id="beY-cK-8EQ"/>
+                                    <outlet property="delegate" destination="ym1-vv-oEt" id="9gM-4E-fC3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H1c-by-zxP" firstAttribute="top" secondItem="yxW-OD-lHj" secondAttribute="top" id="adz-E9-0UP"/>
+                            <constraint firstItem="H1c-by-zxP" firstAttribute="leading" secondItem="5rE-RP-J1n" secondAttribute="leading" id="gxh-75-K6n"/>
+                            <constraint firstItem="H1c-by-zxP" firstAttribute="trailing" secondItem="5rE-RP-J1n" secondAttribute="trailing" id="mtt-WI-oIE"/>
+                            <constraint firstAttribute="bottom" secondItem="H1c-by-zxP" secondAttribute="bottom" id="qK7-uH-7YR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5rE-RP-J1n"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryTableView" destination="H1c-by-zxP" id="DGG-OM-2bL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlE-7f-YoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="1472.5446428571429"/>
+        </scene>
+        <!--State And CitiesVC-->
+        <scene sceneID="NH4-gU-tU7">
+            <objects>
+                <viewController storyboardIdentifier="StateAndCitiesVC" id="7yH-94-6n9" customClass="StateAndCitiesVC" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGh-lt-kZc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ASw-0q-Kiq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StateCititesTCCell" rowHeight="100" id="mZJ-A5-aNz" customClass="StateCititesTCCell" customModule="Covid_19" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mZJ-A5-aNz" id="BNZ-MA-JSx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-1h-4wP">
+                                                    <rect key="frame" x="20" y="10" width="374" height="79.5"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="pFS-1h-4wP" secondAttribute="bottom" constant="10" id="1ef-zo-eN7"/>
+                                                <constraint firstItem="pFS-1h-4wP" firstAttribute="top" secondItem="BNZ-MA-JSx" secondAttribute="top" constant="10" id="Lc6-Hv-oY9"/>
+                                                <constraint firstItem="pFS-1h-4wP" firstAttribute="leading" secondItem="BNZ-MA-JSx" secondAttribute="leading" constant="20" id="W9f-M6-bul"/>
+                                                <constraint firstAttribute="trailing" secondItem="pFS-1h-4wP" secondAttribute="trailing" constant="20" id="srw-wr-EMh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="stateCitiesLbl" destination="pFS-1h-4wP" id="blg-ER-eR4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7yH-94-6n9" id="FTL-i0-9mu"/>
+                                    <outlet property="delegate" destination="7yH-94-6n9" id="Hyl-KT-Gmz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ASw-0q-Kiq" firstAttribute="leading" secondItem="exp-3d-U5e" secondAttribute="leading" id="3ap-jx-VCb"/>
+                            <constraint firstItem="ASw-0q-Kiq" firstAttribute="top" secondItem="CGh-lt-kZc" secondAttribute="top" id="gEL-eF-bhE"/>
+                            <constraint firstAttribute="bottom" secondItem="ASw-0q-Kiq" secondAttribute="bottom" id="hB1-R3-sre"/>
+                            <constraint firstItem="exp-3d-U5e" firstAttribute="trailing" secondItem="ASw-0q-Kiq" secondAttribute="trailing" id="vXZ-fC-WsD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="exp-3d-U5e"/>
+                    </view>
+                    <connections>
+                        <outlet property="statesCitiesTV" destination="ASw-0q-Kiq" id="a0k-lU-gx3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5N9-Ff-tkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.826086956522" y="1481.9196428571429"/>
         </scene>
         <!--TrackerVC-->
         <scene sceneID="Px9-mv-fH5">

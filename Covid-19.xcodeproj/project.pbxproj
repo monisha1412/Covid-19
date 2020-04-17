@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD969E24495FA600A04028 /* ContriesVC.swift */; };
+		0DBD96A124495FE900A04028 /* CountriesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A024495FE900A04028 /* CountriesTVCell.swift */; };
+		0DBD96A32449604E00A04028 /* CountryStateCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A22449604E00A04028 /* CountryStateCities.swift */; };
+		0DBD96A62449614200A04028 /* StateAndCitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A52449614200A04028 /* StateAndCitiesVC.swift */; };
+		0DBD96A8244961EA00A04028 /* City.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DBD96A7244961EA00A04028 /* City.json */; };
+		0DBD96AA244962A200A04028 /* StateCititesTCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A9244962A200A04028 /* StateCititesTCCell.swift */; };
 		0DD09A67244429AB004D0F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A66244429AB004D0F73 /* AppDelegate.swift */; };
 		0DD09A6C244429AB004D0F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD09A6A244429AB004D0F73 /* Main.storyboard */; };
 		0DD09A6F244429AB004D0F73 /* Covid_19.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A6D244429AB004D0F73 /* Covid_19.xcdatamodeld */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DBD969E24495FA600A04028 /* ContriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesVC.swift; sourceTree = "<group>"; };
+		0DBD96A024495FE900A04028 /* CountriesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVCell.swift; sourceTree = "<group>"; };
+		0DBD96A22449604E00A04028 /* CountryStateCities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryStateCities.swift; sourceTree = "<group>"; };
+		0DBD96A52449614200A04028 /* StateAndCitiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateAndCitiesVC.swift; sourceTree = "<group>"; };
+		0DBD96A7244961EA00A04028 /* City.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = City.json; sourceTree = "<group>"; };
+		0DBD96A9244962A200A04028 /* StateCititesTCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCititesTCCell.swift; sourceTree = "<group>"; };
 		0DD09A63244429AB004D0F73 /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD09A66244429AB004D0F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DD09A6B244429AB004D0F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DBD969D24495F6900A04028 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				0DBD969E24495FA600A04028 /* ContriesVC.swift */,
+				0DBD96A024495FE900A04028 /* CountriesTVCell.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		0DBD96A42449611700A04028 /* State & Cities */ = {
+			isa = PBXGroup;
+			children = (
+				0DBD96A52449614200A04028 /* StateAndCitiesVC.swift */,
+				0DBD96A9244962A200A04028 /* StateCititesTCCell.swift */,
+			);
+			path = "State & Cities";
+			sourceTree = "<group>";
+		};
 		0DD09A5A244429AA004D0F73 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +116,9 @@
 		0DD09A7B24442E6F004D0F73 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0DBD96A42449611700A04028 /* State & Cities */,
 				0DD09A7C24442EB9004D0F73 /* HomePageVC.swift */,
+				0DBD969D24495F6900A04028 /* Country */,
 				0DD09A7E24442EBC004D0F73 /* Tracker */,
 				0DD09A8A244438AC004D0F73 /* Appdelegate */,
 			);
@@ -105,6 +137,7 @@
 		0DD09A8324443357004D0F73 /* Json Files */ = {
 			isa = PBXGroup;
 			children = (
+				0DBD96A7244961EA00A04028 /* City.json */,
 				0DD09A852444336B004D0F73 /* package-lock.json */,
 				0DD09A842444336B004D0F73 /* package.json */,
 			);
@@ -115,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0DD09A8E24444091004D0F73 /* Corona.swift */,
+				0DBD96A22449604E00A04028 /* CountryStateCities.swift */,
 			);
 			path = "Model Classes";
 			sourceTree = "<group>";
@@ -214,6 +248,7 @@
 				0DD09A74244429AC004D0F73 /* LaunchScreen.storyboard in Resources */,
 				0DD09A872444336B004D0F73 /* package-lock.json in Resources */,
 				0DD09A71244429AC004D0F73 /* Assets.xcassets in Resources */,
+				0DBD96A8244961EA00A04028 /* City.json in Resources */,
 				0DD09A6C244429AB004D0F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,12 +261,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD09A6F244429AB004D0F73 /* Covid_19.xcdatamodeld in Sources */,
+				0DBD96AA244962A200A04028 /* StateCititesTCCell.swift in Sources */,
 				0DD09A8224442EF6004D0F73 /* TrackerTVCell.swift in Sources */,
 				0DD09A67244429AB004D0F73 /* AppDelegate.swift in Sources */,
+				0DBD96A62449614200A04028 /* StateAndCitiesVC.swift in Sources */,
 				0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */,
+				0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */,
 				0DD09A7D24442EB9004D0F73 /* HomePageVC.swift in Sources */,
 				0DD09A8024442ED8004D0F73 /* TrackerVC.swift in Sources */,
 				0DD09A8F24444091004D0F73 /* Corona.swift in Sources */,
+				0DBD96A32449604E00A04028 /* CountryStateCities.swift in Sources */,
+				0DBD96A124495FE900A04028 /* CountriesTVCell.swift in Sources */,
 				0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
