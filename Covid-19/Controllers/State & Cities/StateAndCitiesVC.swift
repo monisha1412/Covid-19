@@ -37,7 +37,7 @@ extension StateAndCitiesVC: UITableViewDelegate, UITableViewDataSource {
         
         let headerLabel = UILabel(frame: CGRect(x: 15, y: 10, width:tableView.bounds.size.width, height: tableView.bounds.size.height))
         headerLabel.font = UIFont(name: "Cochin-Bold", size: 25)
-        headerLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        headerLabel.textColor = #colorLiteral(red: 0, green: 0.5603182912, blue: 0, alpha: 1)
         headerLabel.text = stateList[section].stateName
         headerLabel.sizeToFit()
         headerView.addSubview(headerLabel)

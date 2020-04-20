@@ -24,7 +24,6 @@
 		0DD09A862444336B004D0F73 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DD09A842444336B004D0F73 /* package.json */; };
 		0DD09A872444336B004D0F73 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DD09A852444336B004D0F73 /* package-lock.json */; };
 		0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8B24443A6E004D0F73 /* ServerClass.swift */; };
-		0DD09A8F24444091004D0F73 /* Corona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8E24444091004D0F73 /* Corona.swift */; };
 		0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		0DD09A842444336B004D0F73 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		0DD09A852444336B004D0F73 /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		0DD09A8B24443A6E004D0F73 /* ServerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerClass.swift; sourceTree = "<group>"; };
-		0DD09A8E24444091004D0F73 /* Corona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corona.swift; sourceTree = "<group>"; };
 		0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 		0DD09A8824443863004D0F73 /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0DD09A8E24444091004D0F73 /* Corona.swift */,
 				0DBD96A22449604E00A04028 /* CountryStateCities.swift */,
 			);
 			path = "Model Classes";
@@ -269,7 +266,6 @@
 				0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */,
 				0DD09A7D24442EB9004D0F73 /* HomePageVC.swift in Sources */,
 				0DD09A8024442ED8004D0F73 /* TrackerVC.swift in Sources */,
-				0DD09A8F24444091004D0F73 /* Corona.swift in Sources */,
 				0DBD96A32449604E00A04028 /* CountryStateCities.swift in Sources */,
 				0DBD96A124495FE900A04028 /* CountriesTVCell.swift in Sources */,
 				0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */,
