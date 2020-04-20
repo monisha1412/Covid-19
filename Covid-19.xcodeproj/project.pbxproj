@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D483EBA244D8BC800908504 /* States+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB4244D8BC800908504 /* States+CoreDataClass.swift */; };
+		0D483EBB244D8BC800908504 /* States+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB5244D8BC800908504 /* States+CoreDataProperties.swift */; };
+		0D483EBC244D8BC800908504 /* Countries+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB6244D8BC800908504 /* Countries+CoreDataClass.swift */; };
+		0D483EBD244D8BC800908504 /* Countries+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB7244D8BC800908504 /* Countries+CoreDataProperties.swift */; };
+		0D483EBE244D8BC800908504 /* Cities+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB8244D8BC800908504 /* Cities+CoreDataClass.swift */; };
+		0D483EBF244D8BC800908504 /* Cities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EB9244D8BC800908504 /* Cities+CoreDataProperties.swift */; };
+		0D483EC5244D9BAD00908504 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D483EC4244D9BAD00908504 /* Extension.swift */; };
 		0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD969E24495FA600A04028 /* ContriesVC.swift */; };
 		0DBD96A124495FE900A04028 /* CountriesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A024495FE900A04028 /* CountriesTVCell.swift */; };
 		0DBD96A32449604E00A04028 /* CountryStateCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD96A22449604E00A04028 /* CountryStateCities.swift */; };
@@ -21,13 +28,18 @@
 		0DD09A7D24442EB9004D0F73 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A7C24442EB9004D0F73 /* HomePageVC.swift */; };
 		0DD09A8024442ED8004D0F73 /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A7F24442ED8004D0F73 /* TrackerVC.swift */; };
 		0DD09A8224442EF6004D0F73 /* TrackerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8124442EF6004D0F73 /* TrackerTVCell.swift */; };
-		0DD09A862444336B004D0F73 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DD09A842444336B004D0F73 /* package.json */; };
-		0DD09A872444336B004D0F73 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DD09A852444336B004D0F73 /* package-lock.json */; };
 		0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8B24443A6E004D0F73 /* ServerClass.swift */; };
 		0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D483EB4244D8BC800908504 /* States+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "States+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D483EB5244D8BC800908504 /* States+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "States+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D483EB6244D8BC800908504 /* Countries+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D483EB7244D8BC800908504 /* Countries+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D483EB8244D8BC800908504 /* Cities+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cities+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D483EB9244D8BC800908504 /* Cities+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cities+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D483EC4244D9BAD00908504 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		0DBD969E24495FA600A04028 /* ContriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesVC.swift; sourceTree = "<group>"; };
 		0DBD96A024495FE900A04028 /* CountriesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVCell.swift; sourceTree = "<group>"; };
 		0DBD96A22449604E00A04028 /* CountryStateCities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryStateCities.swift; sourceTree = "<group>"; };
@@ -44,8 +56,6 @@
 		0DD09A7C24442EB9004D0F73 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0DD09A7F24442ED8004D0F73 /* TrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerVC.swift; sourceTree = "<group>"; };
 		0DD09A8124442EF6004D0F73 /* TrackerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTVCell.swift; sourceTree = "<group>"; };
-		0DD09A842444336B004D0F73 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		0DD09A852444336B004D0F73 /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		0DD09A8B24443A6E004D0F73 /* ServerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerClass.swift; sourceTree = "<group>"; };
 		0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +71,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D483EC0244D8C6C00908504 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				0D483EB6244D8BC800908504 /* Countries+CoreDataClass.swift */,
+				0D483EB7244D8BC800908504 /* Countries+CoreDataProperties.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		0D483EC1244D8C7D00908504 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				0D483EB4244D8BC800908504 /* States+CoreDataClass.swift */,
+				0D483EB5244D8BC800908504 /* States+CoreDataProperties.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0D483EC2244D8C8900908504 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				0D483EB8244D8BC800908504 /* Cities+CoreDataClass.swift */,
+				0D483EB9244D8BC800908504 /* Cities+CoreDataProperties.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		0D483EC3244D9B7F00908504 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D483EC4244D9BAD00908504 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0DBD969D24495F6900A04028 /* Country */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +143,7 @@
 		0DD09A65244429AB004D0F73 /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
+				0D483EC3244D9B7F00908504 /* Extension */,
 				0DD09A8824443863004D0F73 /* Model Classes */,
 				0DD09A892444387F004D0F73 /* View */,
 				0DD09A7B24442E6F004D0F73 /* Controllers */,
@@ -136,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				0DBD96A7244961EA00A04028 /* City.json */,
-				0DD09A852444336B004D0F73 /* package-lock.json */,
-				0DD09A842444336B004D0F73 /* package.json */,
 			);
 			path = "Json Files";
 			sourceTree = "<group>";
@@ -178,6 +222,9 @@
 		0DD09A9024445AF7004D0F73 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				0D483EC2244D8C8900908504 /* City */,
+				0D483EC1244D8C7D00908504 /* State */,
+				0D483EC0244D8C6C00908504 /* Country */,
 				0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
@@ -241,9 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD09A862444336B004D0F73 /* package.json in Resources */,
 				0DD09A74244429AC004D0F73 /* LaunchScreen.storyboard in Resources */,
-				0DD09A872444336B004D0F73 /* package-lock.json in Resources */,
 				0DD09A71244429AC004D0F73 /* Assets.xcassets in Resources */,
 				0DBD96A8244961EA00A04028 /* City.json in Resources */,
 				0DD09A6C244429AB004D0F73 /* Main.storyboard in Resources */,
@@ -260,15 +305,22 @@
 				0DD09A6F244429AB004D0F73 /* Covid_19.xcdatamodeld in Sources */,
 				0DBD96AA244962A200A04028 /* StateCititesTCCell.swift in Sources */,
 				0DD09A8224442EF6004D0F73 /* TrackerTVCell.swift in Sources */,
+				0D483EBA244D8BC800908504 /* States+CoreDataClass.swift in Sources */,
+				0D483EBE244D8BC800908504 /* Cities+CoreDataClass.swift in Sources */,
+				0D483EBD244D8BC800908504 /* Countries+CoreDataProperties.swift in Sources */,
 				0DD09A67244429AB004D0F73 /* AppDelegate.swift in Sources */,
 				0DBD96A62449614200A04028 /* StateAndCitiesVC.swift in Sources */,
+				0D483EBC244D8BC800908504 /* Countries+CoreDataClass.swift in Sources */,
 				0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */,
 				0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */,
 				0DD09A7D24442EB9004D0F73 /* HomePageVC.swift in Sources */,
 				0DD09A8024442ED8004D0F73 /* TrackerVC.swift in Sources */,
+				0D483EC5244D9BAD00908504 /* Extension.swift in Sources */,
 				0DBD96A32449604E00A04028 /* CountryStateCities.swift in Sources */,
+				0D483EBF244D8BC800908504 /* Cities+CoreDataProperties.swift in Sources */,
 				0DBD96A124495FE900A04028 /* CountriesTVCell.swift in Sources */,
 				0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */,
+				0D483EBB244D8BC800908504 /* States+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

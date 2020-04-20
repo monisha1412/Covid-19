@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18G4032" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Cities" representedClassName="Cities" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="States" inverseName="data" inverseEntity="States" syncable="YES"/>
+    </entity>
+    <entity name="Countries" representedClassName="Countries" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="states" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="States" inverseName="countries" inverseEntity="States" syncable="YES"/>
+    </entity>
+    <entity name="States" representedClassName="States" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="countries" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Countries" inverseName="states" inverseEntity="Countries" syncable="YES"/>
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Cities" inverseName="state" inverseEntity="Cities" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Countries" positionX="-27" positionY="18" width="128" height="75"/>
+        <element name="States" positionX="18" positionY="72" width="128" height="90"/>
+        <element name="Cities" positionX="54" positionY="108" width="128" height="75"/>
+    </elements>
 </model>
