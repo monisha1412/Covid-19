@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 struct CountryStateCities : Codable {
     
     let  countries : [Country]?

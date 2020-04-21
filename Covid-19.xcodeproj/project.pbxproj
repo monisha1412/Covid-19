@@ -30,6 +30,8 @@
 		0DD09A8224442EF6004D0F73 /* TrackerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8124442EF6004D0F73 /* TrackerTVCell.swift */; };
 		0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A8B24443A6E004D0F73 /* ServerClass.swift */; };
 		0DD09A9424445B3F004D0F73 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */; };
+		0DE56B6B244F000C00E2EB4E /* PracticeModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE56B6A244F000C00E2EB4E /* PracticeModelClass.swift */; };
+		0DE56B6D244F029800E2EB4E /* PracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE56B6C244F029800E2EB4E /* PracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		0DD09A8124442EF6004D0F73 /* TrackerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTVCell.swift; sourceTree = "<group>"; };
 		0DD09A8B24443A6E004D0F73 /* ServerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerClass.swift; sourceTree = "<group>"; };
 		0DD09A9324445B3F004D0F73 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0DE56B6A244F000C00E2EB4E /* PracticeModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModelClass.swift; sourceTree = "<group>"; };
+		0DE56B6C244F029800E2EB4E /* PracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +147,10 @@
 		0DD09A65244429AB004D0F73 /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
-				0D483EC3244D9B7F00908504 /* Extension */,
 				0DD09A8824443863004D0F73 /* Model Classes */,
 				0DD09A892444387F004D0F73 /* View */,
 				0DD09A7B24442E6F004D0F73 /* Controllers */,
+				0D483EC3244D9B7F00908504 /* Extension */,
 				0DD09A9024445AF7004D0F73 /* CoreData */,
 				0DD09A8324443357004D0F73 /* Json Files */,
 				0DD09A8D24443A74004D0F73 /* Server */,
@@ -160,6 +164,7 @@
 		0DD09A7B24442E6F004D0F73 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0DE56B6C244F029800E2EB4E /* PracticeVC.swift */,
 				0DD09A7C24442EB9004D0F73 /* HomePageVC.swift */,
 				0DBD96A42449611700A04028 /* State & Cities */,
 				0DBD969D24495F6900A04028 /* Country */,
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				0DBD96A22449604E00A04028 /* CountryStateCities.swift */,
+				0DE56B6A244F000C00E2EB4E /* PracticeModelClass.swift */,
 			);
 			path = "Model Classes";
 			sourceTree = "<group>";
@@ -311,6 +317,8 @@
 				0DD09A67244429AB004D0F73 /* AppDelegate.swift in Sources */,
 				0DBD96A62449614200A04028 /* StateAndCitiesVC.swift in Sources */,
 				0D483EBC244D8BC800908504 /* Countries+CoreDataClass.swift in Sources */,
+				0DE56B6B244F000C00E2EB4E /* PracticeModelClass.swift in Sources */,
+				0DE56B6D244F029800E2EB4E /* PracticeVC.swift in Sources */,
 				0DD09A8C24443A6E004D0F73 /* ServerClass.swift in Sources */,
 				0DBD969F24495FA600A04028 /* ContriesVC.swift in Sources */,
 				0DD09A7D24442EB9004D0F73 /* HomePageVC.swift in Sources */,

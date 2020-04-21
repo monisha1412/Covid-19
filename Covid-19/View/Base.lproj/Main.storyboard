@@ -43,6 +43,14 @@
                                     <constraint firstAttribute="height" constant="150" id="2lm-SD-fuE"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHQ-sx-rWL">
+                                <rect key="frame" x="305" y="108" width="89" height="42"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
+                                <state key="normal" title="Practice"/>
+                                <connections>
+                                    <segue destination="7i2-wH-nGa" kind="show" id="JAS-xq-MsL"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-iH-ZfG">
                                 <rect key="frame" x="341" y="113" width="53" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
@@ -58,6 +66,8 @@
                         <constraints>
                             <constraint firstItem="8eU-tg-jov" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Pp-PT-RrY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9s-iH-ZfG" secondAttribute="trailing" constant="20" id="GOp-xN-u4c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VHQ-sx-rWL" secondAttribute="trailing" constant="20" id="Q9U-dP-nDc"/>
+                            <constraint firstItem="VHQ-sx-rWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eGI-6B-B4l"/>
                             <constraint firstItem="i9s-iH-ZfG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="iDm-AS-Noj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eU-tg-jov" secondAttribute="trailing" constant="20" id="pz5-sI-Q26"/>
                             <constraint firstItem="8eU-tg-jov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qYy-Ya-b13"/>
@@ -273,6 +283,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AvD-S8-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1557.9710144927537" y="762.72321428571422"/>
+        </scene>
+        <!--PracticeVC-->
+        <scene sceneID="c7f-BK-Tm5">
+            <objects>
+                <viewController id="7i2-wH-nGa" customClass="PracticeVC" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="60n-Kc-34C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ODR-8Q-0Ui"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17a-xk-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G8Z-V3-2wT">
