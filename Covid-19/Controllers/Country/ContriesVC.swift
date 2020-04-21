@@ -20,6 +20,7 @@ class ContriesVC: UIViewController {
     var countriesList : CountryStateCities?
     
     var jsonData: [String:Any] = [:]
+    
     var dbCountries: [Countries] = []
     
     override func viewDidLoad() {
@@ -127,7 +128,7 @@ extension ContriesVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let statesVC = utilizeViewController(boardId: "Main", identifier: "StateAndCitiesVC") as! StateAndCitiesVC
-        statesVC.stateList = dbCountries[indexPath.row].states?.array as? [State] ?? []
+        statesVC.stateList = dbCountries[indexPath.row].states?.array as? [States] ?? [] 
         navigationController?.pushViewController(statesVC, animated: true)
         
     }

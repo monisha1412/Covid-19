@@ -11,7 +11,7 @@ import UIKit
 class StateAndCitiesVC: UIViewController {
 
     @IBOutlet weak var statesCitiesTV: UITableView!
-    var stateList : [State] = []
+    var stateList : [States] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ extension StateAndCitiesVC: UITableViewDelegate, UITableViewDataSource {
         let headerLabel = UILabel(frame: CGRect(x: 15, y: 10, width:tableView.bounds.size.width, height: tableView.bounds.size.height))
         headerLabel.font = UIFont(name: "Cochin-Bold", size: 25)
         headerLabel.textColor = #colorLiteral(red: 0, green: 0.5603182912, blue: 0, alpha: 1)
-        headerLabel.text = stateList[section].stateName
+        headerLabel.text = stateList[section].name
         headerLabel.sizeToFit()
         headerView.addSubview(headerLabel)
         
@@ -46,13 +46,26 @@ extension StateAndCitiesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stateList[section].cities?.count ?? 0
+        return stateList[section].data?.array.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = statesCitiesTV.dequeueReusableCell(withIdentifier: "StateCititesTCCell", for: indexPath) as! StateCititesTCCell
-        cell.stateCitiesLbl.text = stateList[indexPath.section].cities?[indexPath.row]
+        let city = stateList[indexPath.section].data?.array as? [Cities]
+        cell.stateCitiesLbl.text = city?[indexPath.row].name
         return cell
     }
     
     
 }
+
+
+//func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//    return stateList.count
+//}
+//
+//func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//    let cell = statesCitiesTV.dequeueReusableCell(withIdentifier: "StateCititesTCCell", for: indexPath) as! StateCititesTCCell
+//    cell.stateCitiesLbl.text = stateList[indexPath.row].stateName
+//    return cell
+//}
+
