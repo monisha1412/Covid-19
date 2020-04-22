@@ -23,7 +23,8 @@ class PracticeVC: UIViewController {
   
     func willGetAcedamicData()  {
         if let academic = jsonData["Address"] as? [String:Any] {
-            print("#######")
+            print("#######", academic.count)
+        
         }
     }
     func postAction() {
@@ -56,6 +57,10 @@ class PracticeVC: UIViewController {
                 do {
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                         self.jsonData = json
+                        print("Prinitng the JSON:", self.jsonData)
+                        if let name = self.jsonData["FirstName"] as? String {
+                            print("printing the first name: ",  name)
+                        }
                         self.willGetAcedamicData()
                     }
                     
