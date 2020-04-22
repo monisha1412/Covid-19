@@ -13,7 +13,7 @@ import Foundation
 struct PracticeModelClass  {
     
     
-//    var academic : Academic?
+    var academic : Academic?
     var activeStatus : String?
 //    var address : Address?
     var candidateID : String?
@@ -40,9 +40,9 @@ struct PracticeModelClass  {
     
 
     init(dict:[String:Any]) {
-//        if let academicValue = dict["Academic"] as? [String] {
-//            print("####")
-//        }
+        if let academicValue = dict["Academic"] as? [String] {
+            print("####")
+        }
         activeStatus = dict["ActiveStatus"] as? String
         candidateID = dict["CandidateID"] as? String
         clientID = dict["ClientID"] as? String

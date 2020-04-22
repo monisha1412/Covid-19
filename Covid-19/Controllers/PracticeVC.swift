@@ -11,11 +11,21 @@ import UIKit
 class PracticeVC: UIViewController {
 
     var dataOfPractice :PracticeModelClass?
+    
+    var jsonData : [String:Any] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         postAction()
+
     }
     
+  
+    func willGetAcedamicData()  {
+        if let academic = jsonData["Address"] as? [String:Any] {
+            print("#######")
+        }
+    }
     func postAction() {
         let Url = String(format: "https://apis.examroom.ai/api/CandidateSignIn")
         guard let serviceUrl = URL(string: Url) else { return }
@@ -44,10 +54,11 @@ class PracticeVC: UIViewController {
             }
             if let data = data {
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
-                    self.dataOfPractice = json as? PracticeModelClass
-                    print("printing the data of dataOfPractice: ",self.dataOfPractice )
+                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                        self.jsonData = json
+                        self.willGetAcedamicData()
+                    }
+                    
                 } catch {
                     print(error)
                 }
